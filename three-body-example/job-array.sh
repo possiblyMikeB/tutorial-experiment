@@ -12,6 +12,9 @@
 #SBATCH --ntasks 1          # number of tasks we'll perform
 #SBATCH --cpus-per-task 1   # num. cpus each task will require
 #SBATCH --mem-per-cpu 1024  # memory required per cpu (in megabytes)
+#SBATCH --qos "project-cpu"
+#SBATCH --partition "batch-cpu"
+#SBATCH --account "crf" 
 
 ### Script To Execute:
 
